@@ -45,3 +45,130 @@ body {
     background-color: var(--rose-light);
     color: var(--stone-600);
 }
+
+h1,
+h2 {
+    font-family: var(--font-heading);
+}
+
+main {
+    width: 100%;
+    padding: 40px 10px;
+    margin: 120px 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 28px;
+}
+
+li::marker {
+    color: var(--rose-dark);
+    font-size: 16px;
+}
+
+ol > li::marker {
+    font-family: var(--font-main);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.recipe-card-container {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 910px;
+    margin: 0 auto;
+    border-radius: 26px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.recipe-card-image-container,
+.recipe-card-content-container {
+    padding: 0 52px;
+}
+
+.recipe-card-image-container {
+    padding-top: 48px;
+}
+
+.recipe-card-content-container {
+    padding-bottom: 40px;
+}
+
+.recipe-title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 58px;
+    color: var(--stone-900);
+    margin-bottom: 26px;
+}
+
+.recipe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 36px;
+}
+
+.highlight-container {
+    margin: 36px 0;
+    background-color: var(--rose-light);
+    padding: 34px 30px;
+    border-radius: 14px;
+}
+
+.highlight-list > li {
+    margin-bottom: 12px;
+}
+
+.highlight-title {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 14px;
+    color: var(--rose-dark);
+    font-weight: 600;
+}
+
+.recipe-info-container:not(:last-child) {
+    margin: 36px 0;
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe-info-title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    color: var(--brown);
+}
+
+.recipe-info-table {
+    width: 100%;
+    text-align: left;
+    border: none;
+    margin-top: 18px;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+td {
+    padding: 14px 32px;
+}
+
+tr:last-child > td {
+    padding-bottom: 0;
+}
+
+.recipe-info-table .table-value {
+    font-weight: 600;
+    color: var(--brown);
+}
