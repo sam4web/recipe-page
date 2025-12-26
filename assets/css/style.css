@@ -172,3 +172,31 @@ tr:last-child > td {
     font-weight: 600;
     color: var(--brown);
 }
+
+@media (max-width: 642px) {
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    .recipe-card-image-container {
+        padding: 0;
+    }
+
+    .recipe-card-content-container {
+        padding: 0 42px;
+        padding-bottom: 38px;
+    }
+
+    .recipe-image {
+        border-radius: 0;
+    }
+
+    .recipe-info-title {
+        margin-bottom: 20px;
+    }
+
+    td {
+        padding: 14px 28px;
+    }
+}
